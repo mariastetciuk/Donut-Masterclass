@@ -1,0 +1,141 @@
+.section-price__title {
+  margin-bottom: 27px;
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  text-align: center;
+
+  color: $title-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.section-price__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+.price-card {
+  padding: 20px 8px;
+
+  background-color: #fafbfb;
+
+  box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+  border-radius: 25px;
+  border: 1px solid #fafbfb;
+
+  color: $title-color;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &:hover {
+    border-color: $btn-bgc;
+  }
+}
+
+.price-card:not(:last-child) {
+  @media screen and (max-width: 767.97px) {
+    margin-bottom: 28px;
+  }
+}
+
+.price-card__title {
+  max-width: 212px;
+  margin: 0 auto 16px;
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+}
+
+.price-card__list {
+  flex-grow: 1;
+
+  background-image: url(../images/price/mini-bg-donuts.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+
+.price-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icons.svg#icon-untitled);
+  }
+}
+
+// костильок
+// .price-card__item p {
+//   width: 169px;
+//   @media screen and (max-width: 412px) {
+//     width: 220px;
+//   }
+// }
+
+.price-card__btn {
+  display: block;
+  margin: 32px auto 0;
+  padding: 8px 0;
+  width: 145px;
+
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: $secondary-text-color;
+
+  background-color: $btn-bgc;
+  border: 1px solid $btn-bgc;
+  border-radius: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 36px;
+  }
+
+  &:hover {
+    background-color: $secondary-text-color;
+    color: $btn-bgc;
+  }
+
+  &:active {
+    box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+    color: $secondary-text-color;
+    background-color: $btn-bgc;
+    border-color: $secondary-text-color;
+  }
+}

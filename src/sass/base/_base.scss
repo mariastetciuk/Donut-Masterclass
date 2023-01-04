@@ -1,0 +1,10 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: $main-text-color;
+    background: linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
+}
+
+body.modal-open {
+  overflow: hidden;
+}

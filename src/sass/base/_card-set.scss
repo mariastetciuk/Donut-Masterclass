@@ -1,0 +1,9 @@
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+}
+
+.card-set__item {
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}

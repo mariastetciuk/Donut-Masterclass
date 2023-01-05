@@ -10,46 +10,22 @@ new Swiper('.reviews__slider', {
     grabCursor: true,
     slideToClickedSlide: true,
     keyboard: {
-        enadled: true,
-        onlyInViewport: true,
-        pageUpDown: true,
+    enadled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
     },
     mousewheel: {
         sensitivity: 1,
     },
-    slidesPerView: 3,
-    // initialSlide: 1,
-    // spaceBetween: ,
     centeredSlides: true,
     loop: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 3,
+        }
+    },
 });
-
-
-
-
-
-// slick.js$(document).ready(function() {
-//     $('.reviews__slider').slick({
-//         dots: false,
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         speed: 300,
-//         centerMode: true,
-//         centerPadding: '0px',
-//         appendArrows: $('.reviews__pagination'),
-//         variableWidth: true,
-//         responsive: [
-//        {
-//         breakpoint: 767.98,
-//         settings: {
-//         slidesToShow: 1,
-//         centerMode: false,
-//         variableWidth: false,
-//       }
-//     }
-//   ]
-//     })
-     
-
-// });
 

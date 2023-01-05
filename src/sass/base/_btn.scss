@@ -1,0 +1,27 @@
+.btn {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 9px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-align: center;
+
+    color: $secondary-text-color;
+    background: $btn-bgc;
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+    border: none;
+    border-radius: 25px;
+    transition: color $duration-timing, background-color $duration-timing, border $duration-timing, box-shadow $duration-timing;
+
+    &:hover, 
+    &:focus {
+        background-color: $secondary-text-color;
+        color: $btn-bgc;
+        }
+    
+    &:active {
+        border: 1px solid $secondary-text-color;
+        box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+        }
+}

@@ -49,6 +49,8 @@
 
   color: $title-color;
 
+  transition: border-color $duration-timing;
+
   @media screen and (min-width: 768px) {
     width: 225px;
 

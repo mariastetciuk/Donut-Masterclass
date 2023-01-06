@@ -43,6 +43,10 @@
     overflow: hidden;
 }
 
+.swiper-wrapper {
+    min-width: 0;
+}
+
 .swiper-slide {
     display: flex;
     flex-direction: column;

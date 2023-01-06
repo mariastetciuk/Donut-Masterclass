@@ -29,3 +29,4 @@ new Swiper('.reviews__slider', {
     },
 });
 
+

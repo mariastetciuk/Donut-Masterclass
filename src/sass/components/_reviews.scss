@@ -168,6 +168,15 @@
     text-align: center;
 
     width: 280px;
+
+    @media screen and (min-width: 768px) {
+        width: 151px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        width: 285px;
+    }
+
 }
 
 .slider__img {

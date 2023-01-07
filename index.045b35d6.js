@@ -1,0 +1,2 @@
+new Swiper(".reviews__slider",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",type:"fraction"},grabCursor:!0,slideToClickedSlide:!0,keyboard:{enadled:!0,onlyInViewport:!0,pageUpDown:!0},mousewheel:{sensitivity:1},centeredSlides:!0,loop:!0,breakpoints:{320:{slidesPerView:1},768:{slidesPerView:3}}});
+//# sourceMappingURL=index.045b35d6.js.map

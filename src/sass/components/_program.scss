@@ -1,0 +1,178 @@
+/*---Progam---*/
+
+// .program {
+//     padding-top: 100px; 80px; 28px;
+// }
+.program-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.container__title {
+  margin-bottom: 8px;
+
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.21;
+  text-align: center;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 1.219;
+    margin-bottom: 28px;
+    text-align: start;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 24px;
+  }
+}
+.program__description {
+  margin-bottom: 8px;
+  font-size: 16px;
+
+  line-height: 1.25;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.222;
+    margin-bottom: 20px;
+  }
+}
+.program__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+  }
+}
+.program__item {
+  display: inline-flex;
+
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+
+  line-height: 1.25;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.222;
+  }
+}
+
+.program__item::before {
+  content: '';
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  margin-right: 16px;
+  background-image: url(../images/program/iко.png);
+}
+
+.program__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
+}
+.program__btn {
+  padding: 0px;
+
+  line-height: 20px;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/*----Button----*/
+.program__btn {
+  font-weight: 500;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.222;
+  }
+}
+/*----Picture----*/
+
+.program-containerImage {
+  @media screen and (min-width: 768px) {
+    margin: 20px 0 45px 39px;
+  }
+}
+
+.program__card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+
+  background-size: cover;
+
+  text-align: center;
+
+  --indent: 20px;
+  --items: 2;
+
+  @media screen and (min-width: 768px) {
+    --indent: 33px;
+  }
+  @media screen and (min-width: 1200px) {
+    --indent: 36px;
+  }
+}
+.program__itemPict {
+  flex-basis: calc(
+    (100% - (var(--indent) * (var(--items) - 1))) / (var(--items))
+  );
+}
+
+.program__itemPict:first-child {
+  // margin-bottom: 8px;
+
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 40px;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   margin-bottom: 36px;
+  // }
+}
+
+.program__itemPict:nth-child(2n) {
+  // margin-top: 20px;
+
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 40px;
+  // }
+  // @media screen and (min-width: 1280px) {
+  //   margin-bottom: 60px;
+  // }
+}
+
+.program__img {
+  width: 100%;
+
+  border-radius: 50%;
+}

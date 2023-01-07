@@ -1,10 +1,11 @@
-<section class="contact">
+<section class="contact" id="section-contact">
   <div class="container">
     <h2 class="contact__subheader">Contact</h2>
     <p class="contact__text">We will answer any question!</p>
     <form name="contact_form" class="contact__form">
-      <label name="user_email">
+      <label>
         <input
+          name="contact_email"
           class="contact__input contact__email"
           type="email"
           placeholder="Email"
@@ -13,18 +14,16 @@
           title="Please, enter your e-mail"
         />
       </label>
-      <label name="user_question">
+      <label>
         <input
+          name="contact_question"
           class="contact__input contact__question"
           type="text"
           placeholder="Type your question"
           required
         />
       </label>
-      <button type="submit" class="contact__btn">Send</button>
+      <button type="submit" class="contact__btn btn">Send</button>
     </form>
-  </div>
-  <div class="socials">
-    
   </div>
 </section>

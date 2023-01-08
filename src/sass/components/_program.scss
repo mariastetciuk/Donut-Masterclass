@@ -8,9 +8,27 @@
   flex-wrap: wrap;
   flex-direction: column;
 
+  padding: 0 20px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: nowrap;
+    padding: 0 31px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0 15px;
+  }
+}
+.program-containerList {
+  @media screen and (min-width: 768px) {
+    margin-right: 31px;
+    margin-top: 51px;
+    max-width: 337px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 116px;
+    margin-top: 61px;
+    max-width: 417px;
   }
 }
 .container__title {
@@ -109,7 +127,6 @@
 /*----Button----*/
 .program__btn {
   font-weight: 500;
-  padding-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
@@ -117,12 +134,6 @@
   }
 }
 /*----Picture----*/
-
-.program-containerImage {
-  @media screen and (min-width: 768px) {
-    margin: 20px 0 45px 39px;
-  }
-}
 
 .program__card {
   display: flex;
@@ -136,10 +147,15 @@
   --indent: 20px;
   --items: 2;
 
+  margin-top: 24px;
+  margin-bottom: 36px;
+
   @media screen and (min-width: 768px) {
     --indent: 33px;
+    margin-top: 70px;
+    margin-bottom: 45px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     --indent: 36px;
   }
 }
@@ -149,25 +165,20 @@
   );
 }
 
-.program__itemPict:first-child {
-  // margin-bottom: 8px;
-
-  // @media screen and (min-width: 768px) {
-  //   margin-bottom: 40px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   margin-bottom: 36px;
-  // }
+.program__itemPict:nth-child(-n + 2) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 8px;
+  }
 }
 
 .program__itemPict:nth-child(2n) {
   // margin-top: 20px;
 
   // @media screen and (min-width: 768px) {
-  //   margin-bottom: 40px;
+  //   margin-top: 39px;
   // }
   // @media screen and (min-width: 1280px) {
-  //   margin-bottom: 60px;
+  //   margin-top: 60px;
   // }
 }
 
@@ -175,4 +186,24 @@
   width: 100%;
 
   border-radius: 50%;
+}
+
+/*------Overlay---------*/
+
+.program__overlay {
+}
+.program__overlay1part {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.214;
+  text-align: center;
+  color: #ffffff;
+}
+.program__overlay2part {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+
+  color: #ffffff;
 }

@@ -1,0 +1,88 @@
+.speakers__title {
+    margin-bottom: 12px;
+
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+    text-align: center;
+
+    color: $main-text-color;
+ @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    line-height: calc(39 / 32);   
+ }
+
+ @media screen and (min-width: 1280px) {
+    margin-bottom: 5px;
+
+}
+}
+
+.speakers__list {
+    @include card-set(20px);
+
+ @media screen and (min-width: 768px) {
+    @include card-set(32px);
+ }
+}
+
+.speakers__item {
+    @include width-card(20px, 2);
+
+@media screen and (min-width: 768px) {
+    @include width-card(32px, 4);
+}
+}
+
+.speakers__img {
+    margin-left: auto;
+    margin-right: auto;
+   margin-bottom: 12px;
+}
+
+.speakers__name {
+    margin-bottom: 12px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: center;
+
+    color: $main-text-color;
+
+ @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+ }
+}
+
+.speakers__description {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    text-align: center;
+
+    color: $main-text-color;
+
+ @media screen and (min-width: 768px){
+    width: 152px;
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
+ }
+ @media screen and (min-width: 1280px) {
+    width: 181px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+ }
+}
+

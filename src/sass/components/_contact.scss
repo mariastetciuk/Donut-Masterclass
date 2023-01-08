@@ -1,0 +1,117 @@
+.contact {
+  text-align: center;
+  padding-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 68px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 126px;
+  }
+}
+.contact__subheader {
+  font-family: 'Montserrat Alternates', sans-serif;
+  line-height: calc(29 / 24);
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+  }
+}
+.contact__text {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  color: $title-color;
+  margin-top: 27px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+.contact__input {
+  display: block;
+  width: 100%;
+  line-height: calc(20 / 16);
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-bottom: 1px solid $black-color;
+  background-color: transparent;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 394px;
+  }
+}
+.contact__email {
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 27px;
+  }
+}
+.contact__question {
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+  }
+}
+.contact__form {
+  text-align: center;
+  align-items: center;
+}
+.contact__btn {
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+  }
+}
+.contact__input:not(:placeholder-shown):required:valid {
+  outline-color: green;
+}
+
+.contact__input:not(:placeholder-shown):required:invalid {
+  outline-color: red;
+}
+.socials__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 31px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 37px;
+  }
+}
+
+.socials__link {
+  color: $main-text-color;
+  transition: color $duration-timing;
+}
+.socials__icon {
+  fill: currentColor;
+}
+.socials__link:hover {
+  color: $btn-hover-color;
+}

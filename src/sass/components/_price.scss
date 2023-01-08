@@ -28,12 +28,13 @@
 
 .section-price__list {
   @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 15px;
+    @include card-set(15px) // gap: 15px;
+;
   }
 
   @media screen and (min-width: 1280px) {
-    gap: 32px;
+    @include card-set(32px) // gap: 32px;
+;
   }
 }
 
@@ -52,15 +53,16 @@
   transition: border-color $duration-timing;
 
   @media screen and (min-width: 768px) {
-    width: 225px;
-
+    @include width-card(15px, 3);
+    // width: 225px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 395px;
+    @include width-card(32px, 3);
+    // width: 395px;
     padding-top: 28px;
     padding-bottom: 40px;
 

@@ -1,0 +1,251 @@
+.registration{
+    padding-top: 40px;
+
+    @media screen and(min-width:768px){
+        padding-top: 80px;
+    }
+
+    @media screen and(min-width:1280px){
+        padding-top: 100px;
+    }
+
+}
+
+
+.section-title{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(29/24);
+    color:$title-color;
+    padding-bottom: 28px;
+
+    @media screen and(min-width:768px) {
+     font-weight: 500;
+    font-size: 32px;
+    line-height: calc(39/32);
+    }
+    
+}
+
+.registration__form{
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    border-radius: 10px;
+    background-image:linear-gradient(rgba(61,44,44,0.6), rgba(61,44,44,0.6) ),  url(../images/Registration/bg3s@1x.jpg) ;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: urllinear-gradient(rgba(61,44,44,0.6), rgba(61,44,44,0.6) ),  url(../images/Registration/bg3s@2x.jpg) ;
+    }
+
+    @media screen and(min-width:768px){
+        padding-top: 40px;
+        max-width: 768px;
+        flex-direction: row;
+        padding-bottom: 52px;
+        background-image: url(../images/Registration/bg1m@1x.png), 
+        url(../images/Registration/bg2m.png),
+        url(../images/Registration/bg3m@1x.png) ;
+        background-position: left 23px bottom 20px, left 0px bottom 0px, right 0px bottom 0px;
+
+        @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/Registration/bg1m@2x.png), 
+        url(../images/Registration/bg2m@2x.png),
+        url(../images/Registration/bg3m@2x.png) ;
+        
+        
+    }
+
+    @media screen and(min-width:1280px){
+        max-width: 1280px;
+        padding-bottom: 40px;
+        margin-left: 107px;
+        margin-right: 107px;
+        background-image: url(../images/Registration/bg1l@1x.png), 
+        url(../images/Registration/bg2l.png),
+        url(../images/Registration/bg3l@1x.png) ;
+        background-position: left 15px bottom 16px, left 0px bottom 0px, right 0px bottom 0px;
+
+        @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/Registration/bg1l@2x.png), 
+        url(../images/Registration/bg2l@2x.png),
+        url(../images/Registration/bg3l@2x.png);
+       
+  }
+    }
+}
+}
+
+.masterclass-date{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22/18);
+    color: $secondary-text-color;
+
+    @media screen and(min-width:768px){
+        padding-right: 28px;
+        max-width: 118px;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: right;
+    }
+
+    @media screen and(min-width:1280px){
+        padding-right: 28px;
+        text-align: right;
+        max-width: 155px;
+        font-size: 20px;
+        line-height: calc(24/20);
+        color: $main-text-color;
+    }
+
+}
+
+.registration__info{
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    color: $secondary-text-color;
+    
+    @media screen and(min-width:768px){
+        max-width: 278px;
+        text-align: left;
+        color: $main-text-color;
+     }
+
+     @media screen and(min-width:1280px){
+        max-width: 278px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24/20);
+}
+}
+
+
+.registration__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-top: 1px solid $secondary-text-color ;
+    padding-top: 20px;
+    padding-bottom: 0;
+
+    @media screen and(min-width:768px) {
+        width: auto;
+        padding-left: 27px;
+        padding-top: 0;
+        margin-right: 72px;
+        border-top: none;
+        border-left: 1px solid $title-color ;
+    }
+    @media screen and(min-width:1280px) {
+        padding-left: 27px;
+        padding-top: 0;
+        margin-right: 0;
+        border-top: none;
+        border-left: 1px solid $title-color ;
+    }
+    }
+
+.input-field{
+    margin-bottom: 14px;
+    border: none;
+    border-bottom: 1px solid $secondary-text-color;
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(16/20);
+    color: $secondary-text-color;
+    background-color: transparent;
+
+    @media screen and(min-width:768px) {
+        border-bottom: 1px solid $title-color;
+        color: $title-color;
+    }
+
+    @media screen and(min-width:1280px) {
+        width: 90%;
+    }
+     }
+
+     .input-field:not(:placeholder-shown):required:valid {
+        outline-color: green;
+      }
+      
+    .input-field:not(:placeholder-shown):required:invalid {
+        outline-color: red;
+      }
+
+   input[type="email"]{
+    margin-bottom: 32px;
+    @media screen and(min-width:768px){
+        margin-bottom: 0;
+    }
+   }
+
+   ::placeholder{
+    color: $secondary-text-color;
+
+    @media screen and(min-width:768px){
+        color: $title-color;
+    }
+   }
+
+  
+
+
+
+
+
+
+
+// .button{
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     margin: 0;
+//     height: 40px;
+//     width: 145px;
+//     border-radius: 25px;
+//     border: 1px solid #f3848c;
+//     background-color:#f3848c;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: calc(22/18);
+//     color: rgba(255, 255, 255, 1);
+//     box-shadow:10px 15px 25px rgba(232, 183, 183, 0.45);
+    
+//     &:hover{
+//         background-color:$secondary-text-color; 
+//         border:1px solid #F3848C ;
+//         color: #F3848C;
+//     }
+//     &:active{
+//         background-color:#f3848c;
+//         border:1px solid $secondary-text-color ;
+//         color: rgba(255, 255, 255, 1);
+//         box-shadow:10px 15px 25px rgba(232, 183, 183, 0.45),
+//          inset 0 4px 4px rgba(107, 66, 66, 0.25);
+//     }
+// }
+
+

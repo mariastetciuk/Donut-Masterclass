@@ -54,15 +54,16 @@
   }
   
  .nav__link{
-   color: #3C322D;
+   color:$main-text-color;
    font-size: 18px; 
    line-height: calc(22/18);
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   padding: 4px 8px ;
+   transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
    
    &:hover,
    &:focus{
-    background-color: rgba(248, 110, 103, 0.63);
+   background: linear-gradient(rgba(248, 110, 103, 0.63) 0%, rgba(253, 86, 143, 0.86) 100%);
     color:#FCFCFC ;
 
    }
@@ -74,12 +75,12 @@
   /**Hero**/
   
 .hero{
- 
+    
     text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../images/header/hero_mbl@1x.png");
+    background-image:  url("../images/header/hero_mbl@1x.png");
 
 
   @media screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)
@@ -103,7 +104,7 @@
      background-image:  url("../images/header/hero_dsktp@1x.png");
      
     @media screen and (min-device-pixel-ratio: 2),screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-      background-image: url("../images/header/hero_dsktp@2x.png");
+      background-image:url("../images/header/hero_dsktp@2x.png");
     }
     
   }
@@ -137,7 +138,7 @@
      letter-spacing: 0.03em;
      margin-bottom: 18px;
      font-family: Montserrat Alternates;
-     color:#3C322D;
+     color:$main-text-color;
 
     @media screen and (min-width: 768px) {
        font-size: 30px;
@@ -234,7 +235,7 @@
 
 .hero__social__link{
    cursor: pointer;
-   fill:#3C322D;
+   fill:$main-text-color;
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
     &:hover, 
@@ -252,58 +253,126 @@
 
 /** Mobile Menu**/
 .menu-container {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background-color:#E5E2E3;
-    top: 0;
-    right: 0;
-    padding: 48px 83px 48px 40px;
-    z-index: 999;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-    
-  }
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color:#E5E2E3;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu__logo{
+  position: absolute;
+  top:16px;
+  left:20px;
   
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
+  @media screen and (min-width: 768px) {
+    top:24px;
+    left:32px;
+} 
   
-  .js-menu-container{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+}
+
 .menu__toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    
-    justify-content: center;
-  
-    margin-left: auto;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus{
+    background-color: rgba(0, 0, 0, 0.1); 
   }
 
-  @media (min-width: 768px) {
-    .menu__toggle {
-        align-items: center;
-    }
-    
+}
+
+@media (min-width: 1280px) {
+  .menu__toggle {
+    display: none;
   }
+}
+
+.menu-container .menu__toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   
-  
-  @media (min-width: 1280px) {
-    .menu-container, .menu__toggle {
-      display: none;
-    }
+}
+
+.mob__list{
+  align-items: center;
+  padding-top: 112px;
+  padding-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 140px;
+    padding-bottom: 290px;
+} 
+
+}
+
+.mob__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
   }
 
+  @media screen and (min-width: 768px) {
+       
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+ 
+    
+   }
+}
+
+.mob__link {
+  font-family:Montserrat Alternates;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: calc(34/28);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+  color: $main-text-color;
+  padding: 10px 28px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+
+  @media screen and (min-width: 768px) {
+       
+   font-size: 40px;
+   line-height: calc(49/40);
+
+   
+  }
+
+  &:hover,
+  &:focus{
+   background: linear-gradient(rgba(248, 110, 103, 0.63) 0%, rgba(253, 86, 143, 0.86) 100%);
+   color:#FCFCFC ;
+   box-shadow: 0 7px 27px -2px rgba(253, 88, 140, 0.35);
+
+  }
+}
 
   

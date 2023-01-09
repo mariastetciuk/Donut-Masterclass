@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-  
+    background-color: #E5E2E3;
     width: 100%;
     background-color: transparent;
   
@@ -255,7 +255,7 @@
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background-color:var(--contacts-text-color);
+    background-color:#E5E2E3;
     top: 0;
     right: 0;
     padding: 48px 83px 48px 40px;
@@ -304,4 +304,6 @@
       display: none;
     }
   }
+
+
   

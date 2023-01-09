@@ -14,9 +14,9 @@ new Swiper('.reviews__slider', {
     onlyInViewport: true,
     pageUpDown: true,
     },
-    mousewheel: {
-        sensitivity: 1,
-    },
+    // mousewheel: {
+    //     sensitivity: 1,
+    // },
     centeredSlides: true,
     loop: true,
     breakpoints: {

@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  margin: 0;
+  padding: 8px 0;
+  width: 145px;
+  height: 40px;
+
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: $secondary-text-color;
+
+  background-color: $btn-bgc;
+  border: 1px solid $btn-bgc;
+  border-radius: 25px;
+  box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
+
+  transition: background-color $duration-timing, color $duration-timing;
+
+  &:hover {
+    background-color: $secondary-text-color;
+    color: $btn-bgc;
+  }
+
+  &:active {
+    box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+
+    color: $secondary-text-color;
+    background-color: $btn-bgc;
+    border-color: $secondary-text-color;
+  }
+}

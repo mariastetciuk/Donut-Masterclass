@@ -2,7 +2,17 @@ body {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
     color: $main-text-color;
-    background: linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
+    background-image: url("../images/body/img-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    @media screen and(min-width:768px) {
+      background-image: url("../images/body/img-2.svg");
+    }
+  
+    @media screen and(min-width:1280px) {
+      background-image: url("../images/body/img-3.svg");
+    }
 }
 
 body.modal-open {

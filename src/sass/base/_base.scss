@@ -18,3 +18,8 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+
+/* For smooth page scrolling */
+html {
+  scroll-behavior: smooth;
+}

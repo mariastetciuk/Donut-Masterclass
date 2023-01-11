@@ -271,13 +271,13 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 
-  background-image: url("../images/body/img-1.svg");
+  background-image: url("../images/header/mob-bckgd1 .svg");
   background-repeat: no-repeat;
   background-size: cover;
 
  
   @media screen and(min-width:768px) {
-    background-image: url("../images/body/img-3.svg");
+    background-image: url("../images/header/mob-bckgd2.svg");
   }
 }
 

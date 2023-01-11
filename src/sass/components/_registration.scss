@@ -1,0 +1,217 @@
+.registration{
+    padding-top: 40px;
+
+    @media screen and(min-width:768px){
+        padding-top: 80px;
+    }
+
+    @media screen and(min-width:1280px){
+        padding-top: 100px;
+    }
+
+}
+
+
+.section-title{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(29/24);
+    color:$title-color;
+    padding-bottom: 28px;
+
+    @media screen and(min-width:768px) {
+     font-weight: 500;
+    font-size: 32px;
+    line-height: calc(39/32);
+    }
+    
+}
+
+.registration__form{
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    border-radius: 10px;
+    background-image:linear-gradient(rgba(61,44,44,0.6), rgba(61,44,44,0.6) ),  url(../images/Registration/bg3s@1x.jpg) ;
+    background-repeat: no-repeat;
+    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+    
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: urllinear-gradient(rgba(61,44,44,0.6), rgba(61,44,44,0.6) ),  url(../images/Registration/bg3s@2x.jpg) ;
+    }
+
+    @media screen and(min-width:768px){
+        padding-top: 40px;
+        max-width: 768px;
+        flex-direction: row;
+        padding-bottom: 52px;
+        background-image: url(../images/Registration/bgfm@1x.png);
+
+        @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/Registration/bgfm@2x.png); 
+        background-position: center;
+     background-size: contain;
+        
+        
+    }
+
+    @media screen and(min-width:1280px){
+        max-width: 1280px;
+        padding-bottom: 40px;
+        margin-left: 107px;
+        margin-right: 107px;
+        background-image: url(../images/Registration/bgfl@1x.png);
+        box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+
+        @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/Registration/bgfl@2x.png); 
+       background-position: center;
+    background-size: contain;
+  }
+    }
+}
+}
+
+.masterclass-date{
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22/18);
+    color: $secondary-text-color;
+
+    @media screen and(min-width:768px){
+        padding-right: 28px;
+        max-width: 118px;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: right;
+    }
+
+    @media screen and(min-width:1280px){
+        padding-right: 28px;
+        text-align: right;
+        max-width: 155px;
+        font-size: 20px;
+        line-height: calc(24/20);
+        color: $main-text-color;
+    }
+
+}
+
+.registration__info{
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    color: $secondary-text-color;
+    
+    @media screen and(min-width:768px){
+        max-width: 278px;
+        text-align: left;
+        color: $main-text-color;
+     }
+
+     @media screen and(min-width:1280px){
+        max-width: 278px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24/20);
+}
+}
+
+
+.registration__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-top: 1px solid $secondary-text-color ;
+    padding-top: 20px;
+    padding-bottom: 0;
+
+    @media screen and(min-width:768px) {
+        width: auto;
+        padding-left: 27px;
+        padding-top: 0;
+        margin-right: 72px;
+        border-top: none;
+        border-left: 1px solid $title-color ;
+    }
+    @media screen and(min-width:1280px) {
+        padding-left: 27px;
+        padding-top: 0;
+        margin-right: 0;
+        border-top: none;
+        border-left: 1px solid $title-color ;
+    }
+    }
+
+.input-field{
+    margin-bottom: 14px;
+    border: none;
+    border-bottom: 1px solid $secondary-text-color;
+    text-align: left;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(16/20);
+    color: $secondary-text-color;
+    background-color: transparent;
+
+    @media screen and(min-width:768px) {
+        border-bottom: 1px solid $title-color;
+        color: $title-color;
+    }
+
+    @media screen and(min-width:1280px) {
+        width: 90%;
+    }
+     }
+
+     .input-field:not(:placeholder-shown):required:valid {
+        outline-color: green;
+      }
+      
+    .input-field:not(:placeholder-shown):required:invalid {
+        outline-color: red;
+      }
+
+   input[type="email"]{
+    margin-bottom: 32px;
+    @media screen and(min-width:768px){
+        margin-bottom: 0;
+    }
+   }
+
+   ::placeholder{
+    color: $secondary-text-color;
+
+    @media screen and(min-width:768px){
+        color: $title-color;
+    }
+   }
+
+  
+
+
+
+
+
+
+

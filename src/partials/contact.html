@@ -1,0 +1,74 @@
+<section class="contact" id="section-contacts">
+  <div class="container">
+    <h2 class="contact__subheader">Contact</h2>
+    <p class="contact__text">We will answer any question!</p>
+    <form name="contact_form" class="contact__form">
+      <label>
+        <input
+          name="contact_email"
+          class="contact__input contact__email"
+          type="email"
+          placeholder="Email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          title="Please, enter your e-mail"
+        />
+      </label>
+      <label>
+        <input
+          name="contact_question"
+          class="contact__input contact__question"
+          type="text"
+          placeholder="Type your question"
+          required
+        />
+      </label>
+      <button type="submit" class="contact__btn btn">Send</button>
+    </form>
+    <!-- Socails -->
+    <div class="contact__socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a
+            class="socials__link link"
+            href="https://www.twitter.com/"
+            aria-label="Twitter icon"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <svg class="socials__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link link"
+            href="https://www.instagram.com/"
+            aria-label="Instagram icon"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <svg class="socials__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link link"
+            href="https://www.facebook.com/"
+            aria-label="Facebook icon"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            <svg class="socials__icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>

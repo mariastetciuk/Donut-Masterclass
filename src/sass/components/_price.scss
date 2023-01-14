@@ -1,0 +1,183 @@
+.section-price {
+  padding-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 100px;
+  }
+}
+
+.section-price__title {
+  margin-bottom: 27px;
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.21;
+  text-align: center;
+
+  color: $title-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 31px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.22;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 27px;
+  }
+}
+
+.section-price__list {
+  @media screen and (min-width: 768px) {
+    @include card-set(15px) // gap: 15px;
+;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include card-set(32px) // gap: 32px;
+;
+  }
+}
+
+.price-card {
+  padding: 20px 8px;
+  width: 100%;
+
+  background-color: #fafbfb;
+
+  box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+  border-radius: 25px;
+  border: 1px solid #fafbfb;
+
+  color: $title-color;
+
+  transition: border-color $duration-timing;
+
+  @media screen and (min-width: 768px) {
+    @include width-card(15px, 3);
+    // width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include width-card(32px, 3);
+    // width: 395px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+
+    color: inherit;
+  }
+
+  &:hover {
+    border-color: $btn-bgc;
+  }
+}
+
+.price-card:not(:last-child) {
+  @media screen and (max-width: 767.97px) {
+    margin-bottom: 28px;
+  }
+}
+
+.price-card__title {
+  max-width: 212px;
+  margin: 0 auto 16px;
+
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    max-width: 100%;
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.price-card__list {
+  flex-grow: 1;
+
+  background-image: url(../images/price/mini-bg-donuts.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 200px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/price/mini-bg-donuts@2x.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/price/mini-bg-donuts--desktop.png);
+    background-size: 300px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/price/mini-bg-donuts--desktop@2x.png);
+    }
+  }
+}
+
+.price-card__list--without-bg-image {
+  @media screen and (max-width: 767.7px) {
+    background-image: none;
+  }
+}
+
+.price-card__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: 18px;
+  line-height: 1.22;
+
+  @media screen and (min-width: 768px) and (max-width: 1279.7px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &::before {
+    content: '';
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/price/untitled.svg);
+  }
+}
+
+.btn--add-margin {
+  margin: 32px auto 0;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+  }
+}

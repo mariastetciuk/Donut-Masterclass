@@ -115,18 +115,28 @@
     margin-bottom: 16px;
   }
 }
+
+/*----Button----*/
+
+.program-thumb {
+}
+.program-thumb__text {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
 .program__btn {
   padding: 0px;
 
-  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
 
   border: none;
   background: none;
   cursor: pointer;
-}
-/*----Button----*/
-.program__btn {
-  font-weight: 500;
 
   @media screen and (min-width: 768px) {
     font-size: 18px;

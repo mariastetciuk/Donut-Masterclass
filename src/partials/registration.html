@@ -1,0 +1,28 @@
+<section class="registration section" id="registration">
+    <div class="registration__container container">
+        <h2 class="section-title registration__title">Registration</h2>
+        <form name="registration_form" class="registration__form">
+            <p class="masterclass-date">May 23, 11:00 <br> New York</p>
+            <div class="registration__wrapper">
+                <p class="registration__info">Apply your personal info <br> for registration </p>
+                <label>
+                    <input class="input-field" type="text" name="user_name" placeholder="Your name" required 
+                    pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                    title="Username must be two words separated by space.">
+                </label>
+                <label>
+                    <input class="input-field" type="tel"name="user_tel" placeholder="Phone number" required pattern="\+?[0-9\s\-\(\)]+"
+                    minlength="13"
+                    maxlength="13"
+                    title="Phone number must be thirteen symbols.">
+                </label>
+                <label>
+                    <input class="input-field" type="email" name="user_email" placeholder="Email" required>
+                </label>
+            </div>
+            <button class="btn registration__button" type="submit">Register</button>
+        </form>
+        
+    </div>
+    
+</section>

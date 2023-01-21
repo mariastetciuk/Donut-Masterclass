@@ -1,0 +1,28 @@
+// Scroll to top button
+
+.up__btn {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: 2px solid $secondary-bgc;
+  border-radius: 50%;
+  outline: none;
+  background-color: $btn-bgc;
+  padding: 15px;
+  transform: scale(1);
+  //box-shadow:0 0 15px rgba(255,255,255,.4);
+  outline: 1px solid $btn-bgc;
+  transition: transform $duration-timing;
+}
+
+.up__btn:hover {
+  transform: scale(1.1);
+}
+.up__img {
+fill: white;
+}

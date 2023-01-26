@@ -22,11 +22,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 20px 20px 20px;
+    padding: 16px 0px 20px 0px;
     background-color: transparent;
 
    @media screen and (min-width: 768px) {
-    padding: 24px 32px 28px 32px;
+    padding: 24px 0px 28px 0px;
    }
    @media screen and (min-width: 1280px) {
      padding-top: 36px;
@@ -72,7 +72,6 @@
 
 
 
-  /**Hero**/
   
 .hero{
     

@@ -10,7 +10,7 @@
     background-color: transparent;
   
     @media screen and (min-width: 1280px) {
-      position: fixed;
+     
       width: 100%;
       top: 0;
       left: 0;
@@ -72,7 +72,6 @@
 
 
 
-  
 /** Mobile Menu**/
 .menu-container {
   width: 100vw;
@@ -85,6 +84,14 @@
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 
+  background-image: url("../images/header/mob-bckgd1 .svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ 
+  @media screen and(min-width:768px) {
+    background-image: url("../images/header/mob-bckgd2.svg");
+  }
 }
 
 .menu-container.is-open {
